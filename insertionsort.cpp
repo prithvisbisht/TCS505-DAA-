@@ -1,10 +1,17 @@
+/*
+Name-Prithvi Raj Singh Bisht
+Roll_no- 55
+Section-B
+*/
 #include<iostream>
 
 using namespace std;
  
-void Sort(int arr[], int n)
+void insert(int arr[], int n)
 {
    int i, key, j;
+   int shift=0;
+   int comparison=0;
    for (i=0; i<n; i++)
    {
        key = arr[i];
@@ -12,10 +19,15 @@ void Sort(int arr[], int n)
        while(j>=0 && arr[j]>key)
        {
        		arr[j+1]=arr[j];
+       		shift++;
+       		comparison++;
        		j=j-1;
        }
        arr[j+1] = key;
+       shift++;
    }
+   cout<<"shifts --> "<<shift-1<<endl;
+   cout<<"comparisons --> "<<comparison<<endl;
 }
   
 int main()
@@ -31,7 +43,7 @@ int main()
    		{
    			cin>>a[i];
    		}
-   		Sort(a,n);
+   		insert(a,n);
  		for (i=0; i<n; i++)
     	   	cout<<a[i]<<"\t";
    	}
