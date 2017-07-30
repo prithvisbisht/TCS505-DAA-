@@ -5,19 +5,26 @@ using namespace std;
 void ssort(int b[],int n)
 {
 	int i,j,pos,min;
+	int swaps=0;
+	int comparison=0;
 	for(i=0;i<n-1;i++)
 	{
 		pos=i;
 		for(j=i+1;j<n;j++)
 		{
+			comparison++;
 			if(b[j]<b[pos])
-				pos=j;
+				{	
+					pos=j;
+				}
 		}
 		
 		int tmp=b[pos];
 		b[pos]=b[i];
 		b[i]=tmp;
+		swaps++;
 	}
+	cout<<"comparision are --> "<<comparison<<"\t swaps are --> "<<swaps<<endl;
 }
 int main()
 {
