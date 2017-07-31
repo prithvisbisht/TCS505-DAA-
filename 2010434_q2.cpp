@@ -1,3 +1,10 @@
+/*
+Name-Prithvi Raj Singh Bisht
+Roll_no- 55
+Section-B
+Binary search
+*/
+
 #include<iostream>
 
 using namespace std;
