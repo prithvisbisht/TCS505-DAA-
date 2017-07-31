@@ -2,6 +2,7 @@
 Name-Prithvi Raj Singh Bisht
 Roll_no- 55
 Section-B
+Jump Search
 */
 #include<iostream>
 #include<cmath>
